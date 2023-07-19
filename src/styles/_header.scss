@@ -1,0 +1,120 @@
+@use 'variaveis';
+.header{
+  background-color:variaveis.$corFundoHeader;
+  display: flex;
+  padding: 30 0px;
+  padding-left:10%;
+  margin: auto;
+  gap: 50px;
+  font-family: 'Lugrasimo', cursive;
+  div{
+   
+    max-width: 350px;
+    width: 50%;
+    img{
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+  &__infor{
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    &__title{
+      font-family: 'Lugrasimo', cursive;
+      font-size: 60px;
+    }
+    &__ano{
+      font-family: 'Lobster', cursive;
+      font-size: 60px;
+    }
+    &__data{
+      font-family: 'Lugrasimo', cursive;
+      font-size: 40px;
+    }
+    b{
+      font-family: 'Lugrasimo', cursive;
+      font-size: 40px;
+    }
+    #contador{
+      padding-top: 20px;
+      font-family: 'Lobster', cursive;
+      font-size: 40px;
+    }
+  }
+  @media (max-width:624){
+    transition: ease .5s;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    div{
+      width: 90%;
+      margin: auto;
+      margin-bottom: 30px;
+      img{
+        width: 80%;
+        
+      }
+    }
+    &__infor{
+      white-space: normal;
+      &__title{
+        font-size: 60px;
+      }
+    }
+  }
+  @media (min-width:624) and (max-width:992){
+    transition: ease .5s;
+    padding:20px 2%;
+    gap: 20px;
+    div{
+      text-align: center;
+      img{
+        width: 80%;
+      }
+    }
+    &__infor{
+      padding-top: 30px;
+      &__title{
+        font-size: 34px;
+      }
+      &__ano{
+        font-size: 33px;
+      }
+      &__data{
+        
+        font-size: 32px;
+      }
+      b{
+        font-size: 22px;
+      }
+    }
+    #contador{
+      font-size:26px;
+    }
+  }
+  @media (max-width:624){
+    transition: ease .5s;
+    &__infor{
+      
+      &__title{
+        font-size: 31px;
+      }
+      &__ano{
+        font-size: 30px;
+      }
+      &__data{
+        font-size: 30px;
+      }
+      b{
+        font-size: 22px;
+      }
+    }
+    #contador{
+      font-size: 22px;
+      display: block;
+  
+    }
+  }
+  
+}

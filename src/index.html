@@ -4,10 +4,72 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aniversário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Lobster&family=Lugrasimo&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./styles/main.scss">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <img src="images/Feliz-Aniversario.png" alt="">
-  
+  <Section class="header ">
+     <div><img src="images/naturo1.webp" alt="Naruto"></div>
+    <div class="header__infor">
+      <h2 class ="header__infor__title" >Naruto Uzumaki</h2>
+      <p class ="header__infor__ano">18 Anos</p>
+      <p class="header__infor__data"><i class="bi bi-calendar-check"></i> 10/07/2033</p>
+      <p id="contador"><b>Local:</b> Rua 01, Cidade - Bairro</p>
+    </div>
+    
+  </Section>
+  <section class="outros">
+    <h2>Aniversariantes do dia </h2>
+      <ul class="outros__list">
+        <li class="outros__list__item1 fundo3" data-aos="fade-left">
+          <img src="images/Meliudas.jpg" alt="Meliodas">
+          <div class="outros__list__infor">
+            <h3 class="outros__list__infor__title">Meliodas Ira do Dragão</h3>
+            <p class="outros__list__infor__text">É o protagonista e dono do bar Chapéu de Javali. Raramente fica bravo e é muito brincalhão, pervertido, confiante e gentil com aqueles com que se importa. Faz parte do clã dos demônios.</p>
+          </div>
+        </li>
+        <li class="outros__list__item1 fundo2" data-aos="fade-right">
+          <img src="images/escanor.png" alt="escanor">
+          <div class="outros__list__infor">
+            <h3 class="outros__list__infor__title">Escanor Orgulho do Leão</h3>
+            <p class="outros__list__infor__text">Sua força e personalidade variam de acordo com a hora do dia, com o seu poder sendo imenso e sua personalidade arrogante durante o dia, mas se tornando frágil e submisso a noite. Demonstra ter sentimentos por Merlin.</p>
+          </div>
+        </li>
+        <li class="outros__list__item1 fundo4" data-aos="fade-left">
+          <img src="images/King.jpg" alt="King">
+          <div class="outros__list__infor">
+            <h3 class="outros__list__infor__title">King preguiça do Urso</h3>
+            <p class="outros__list__infor__text">Seu verdadeiro nome é Harlequin e ele é o terceiro Rei das Fadas e protetor da Floresta das Fadas e da Fonte da Juventude em seu interior. King é gentil, empático, respeitoso, mas feroz quando necessário.</p>
+          </div>
+        </li>
+        <li class="outros__list__item1 fundo1" data-aos="fade-right">
+          <img src="images/Diane.jpg" alt="Diane">
+          <div class="outros__list__infor">
+            <h3 class="outros__list__infor__title">Diane inveja da Serpente</h3>
+            <p class="outros__list__infor__text">Faz parte do clã de gigantes, possui um enorme poder físico e uma conexão profunda com a terra. Ela é confiante, pavio curto e fará qualquer coisa para proteger uma vida inocente.</p>
+          </div>
+        </li>
+      </ul>
+  </section>
+  <footer class="footer container">
+    <div class="footer__container">
+      <div>
+        <p class="footer__container__text">&copy; 2023 Em Produções. Orgulhosamente criado por Elias Miguel</p>
+      </div>
+      <div>
+        <ul class="footer__container__list">
+          <li class="footer__container__list__item"><a href="https://github.com/eliamiguel" target="_blank"><i class="bi bi-github"></i></i></a></li>
+          <li class="footer__container__list__item"><a href="https://www.linkedin.com/in/elias-perreira-miguel/" target="_blank"><i class="bi bi-linkedin"></i></li>
+          <li class="footer__container__list__item"><a href="https://www.instagram.com/cordeiro9443/?igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="bi bi-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
