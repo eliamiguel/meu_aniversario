@@ -31,15 +31,18 @@
     &__data{
       font-family: 'Lugrasimo', cursive;
       font-size: 40px;
+      color:variaveis.$fundo3;
     }
-    b{
+    b, span{
       font-family: 'Lugrasimo', cursive;
       font-size: 40px;
+      
     }
     #contador{
       padding-top: 20px;
       font-family: 'Lobster', cursive;
       font-size: 40px;
+      
     }
   }
   @media (max-width:624){
@@ -106,7 +109,7 @@
       &__data{
         font-size: 30px;
       }
-      b{
+      b, span{
         font-size: 22px;
       }
     }

@@ -9,19 +9,6 @@
 
 
   }
-  .fundo1{
-   background-color: variaveis.$fundo1;
-  }
-  .fundo2{
-    background-color: variaveis.$fundo2;
-
-  }
-  .fundo3{
-    background-color: variaveis.$fundo3;
-  }
-  .fundo4{
-    background-color: variaveis.$fundo4;
-  }
   &__list{
 
     &__item1{
@@ -67,6 +54,7 @@
       }
       &__infor{
         &__title{
+          
 
         }
         &__text{

@@ -1,0 +1,167 @@
+@use 'variaveis';
+
+.melioda{
+  padding: 30px;
+  display: flex;
+  img{
+    width: 50%;
+    border-radius:30px ;
+  }
+  &__infor{
+    color: variaveis.$textColor;
+    padding: 30px;
+    &__title{
+      text-align: center;
+      font-size: 40px;
+      padding-bottom: 15px;
+      font-family: 'Lobster', cursive;
+
+    }
+    &__text{
+      text-align: center;
+      font-size: 20px;
+
+    }
+    &__data{
+      text-align: center;
+      padding-left: 50px;
+      margin-top: 20px;
+      font-size: 40px;
+      span{
+        font-family: 'Lobster', cursive;
+        padding-top: 15px;
+      }
+    }
+  }
+  @media (max-width:624px){
+    display: block;
+    img{
+      width: 100%;
+    }
+    &__infor{
+      padding: 5px;
+      &__title{
+        padding: 20px;
+        font-size: 40px;
+      }
+      &__text{
+        font-size: 17px;
+      }
+      &__data{
+        font-size: 28px;
+      }
+    }
+  }
+  @media (min-width:624px) and (max-width: 992px){
+    padding: 30px 10; 
+    img{
+      width: 40%;
+    }
+    &__infor{
+      padding: 20px;
+      &__title{
+        font-size: 35px;
+      }
+      &__text{
+        font-size: 17px;
+        text-align: justify;
+      }
+      &__data{
+        font-size: 25px;
+        span{
+          
+          padding-top: 25px;
+        }
+      }
+    }
+  }
+}
+.melioda1{
+  display: flex;
+  justify-self: center;
+  gap: 24px;
+  padding: 50px;
+
+  h2{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 0;
+  }
+
+  iframe{
+    margin-left: 10px;
+    width: 50%;
+    height: 400px;
+    border-radius: 10px;
+
+  }
+
+  &__infor{
+    font-family: 'Roboto', sans-serif;
+    padding: 0 15px;
+    overflow-y: scroll;
+    width: 50%;
+    height: 400px;
+    &__text{
+      padding-top: 15px;
+      line-height: 1.5em;
+      text-align: justify;
+    }
+   
+
+  }
+  @media (min-width:624px) and (max-width: 992px){
+    padding: 50px 0;
+    gap: 0;
+ 
+ 
+   h2{
+     padding: 0px 0;
+     font-size: 32px;
+   }
+ 
+   iframe{
+     padding: 3px;
+     width: 50%;
+     height: 350px;
+   }
+ 
+   &__infor{
+     width: 50%;
+     height: 350px;
+     padding: 10px;
+     overflow-y: none;
+     margin-bottom: 40px;
+     &__text{
+       font-size: 16px;
+     }
+     
+   }
+  }
+  @media (max-width:624px){
+   display: flex;
+   flex-direction:column-reverse;
+   padding: 15px ;
+   gap: 0;
+
+
+  h2{
+    padding: 0px 0;
+    font-size: 30px;
+  }
+
+  iframe{
+    margin-left: 0;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  &__infor{
+    width: 100%;
+    overflow-y: none;
+    margin-top: 40px;
+  }
+}
+  
+}
