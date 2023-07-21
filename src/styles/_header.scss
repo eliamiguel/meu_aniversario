@@ -1,15 +1,16 @@
 @use 'variaveis';
 .header{
   background-color:variaveis.$corFundoHeader;
+  align-items: center;
   display: flex;
   padding: 30 0px;
-  padding-left:10%;
+  padding-left:5%;
   margin: auto;
-  gap: 50px;
+  gap: 30px;
   font-family: 'Lugrasimo', cursive;
   div{
    
-    max-width: 350px;
+    max-width: 300px;
     width: 50%;
     img{
       width: 100%;
@@ -22,7 +23,7 @@
     white-space: nowrap;
     &__title{
       font-family: 'Lugrasimo', cursive;
-      font-size: 50px;
+      font-size: 40px;
     }
     &__ano{
       font-family: 'Lobster', cursive;
@@ -45,7 +46,7 @@
       
     }
   }
-  @media (max-width:624){
+  @media (max-width:768){
     transition: ease .5s;
     display: block;
     padding: 20px;
@@ -65,8 +66,31 @@
         font-size: 60px;
       }
     }
+  } 
+  @media (min-width:624px) and (max-width:768px){
+    display: flex;
+   
+    &__infor{
+      padding-top: 20px;
+      &__title{
+        font-size: 30px;
+      }
+      &__ano{
+        font-size: 33px;
+      }
+      &__data{
+        
+        font-size: 25px;
+      }
+      b{
+        font-size: 22px;
+      }
+    }
+    #contador, #contador1 {
+      font-size:20px;
+    }
   }
-  @media (min-width:624) and (max-width:992){
+  @media (min-width:768px) and (max-width:992px){
     transition: ease .5s;
     padding:20px 2%;
     gap: 20px;
